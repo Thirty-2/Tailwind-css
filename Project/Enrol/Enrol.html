@@ -28,7 +28,7 @@
 
         <header id="header" class="fixed flex items-center justify-between w-full p-3">
             <div>
-                <img id="logo" src="/Project/images/logo.jpg" alt="" class="w-10 rounded-full">
+                <img onclick="logo()" src="/Project/images/logo.jpg" alt="" class="w-10 rounded-full">
             </div>
 
             <div id="right-head" class="flex gap-3">
@@ -38,13 +38,13 @@
                 </div>
             </div>
 
-            <nav id="ham" class="absolute px-9 py-5  bg-white h-[100vh] w-[70vw] right-0 top-0 hidden flex-col gap-1 ">
+            <nav id="ham" class="absolute px-9 py-5  bg-white h-[100vh] w-[70vw] right-0 top-0 hidden flex-col gap-1 z-10">
                 <img src="/Project/images/icons8-close-100white.png" alt="" class="relative w-8 left-48" id="menu-close">
                 
 
                 <div id="nav" class="flex flex-col text-lg font-bold text-right text-white list-none">
 
-                    <div id="Theme" class="flex items-center">
+                    <!-- <div id="Theme" class="flex items-center">
                         <div>
                             <img src="/Project/images/icons8-night-100.png" alt="" class="w-6">
                         </div>
@@ -58,7 +58,7 @@
                         <div>
                             <img src="/Project/images/icons8-sun-100.png" alt="" class="w-6">
                         </div>
-                    </div>
+                    </div> -->
                     <li><a href="/Project/Home/index.html">Home</a></li>
                     <li><a href="/Project/Enrol/Enrol.html">Enrole</a></li>
                     <li><a href="/Project/History/about-us.html">About us</a></li>
@@ -79,32 +79,85 @@
                 <div class="grid grid-cols-1 gap-5 py-0 m-auto">
 
                     <div class="bg-slate-100 rounded-xl p-5 border-gray-300 border-[1px] flex flex-col gap-3">
-                        <h3 class="text-xl font-semibold">front End Web Dev</h3>
-                        <h1 class="text-2xl text-blue-500"> &#8358 50,000/month</h1>
+                        <h3 class="text-xl font-bold">front End Web Dev</h3>
+                        <h1 class="text-2xl text-blue-500"> &#8358 150,000</h1>
+                        <h1 class="text-xl font-bold text-blue-500">Duration: <span class="font-normal text-blue-500">3 Months</span></h1>
+                        <h1 class="">Mode of teaching: Physical</h1>
                         <p class="font-light">Our academic coaching program helps students develop effective study habits and strategies to achieve their academic goals.</p>
                         <img src="https://example.com/academic-coaching.jpg" alt="Academic Coaching" class="program-background">
                         <a href="front-end.html" class="self-center bg-slate-200 rounded-xl p-2 border-blue-100 border-[1px] hover:bg-slate-400 hover:text-white">Enrole for this Course</a>
                     </div>
-
+                    
                     <div class="bg-slate-100 rounded-xl p-5 border-gray-300 border-[1px] flex flex-col gap-3">
-                        <h3 class="text-xl font-semibold">front End Web Dev</h3>
-                        <h1 class="text-2xl text-blue-500"> &#8358 50,000/month</h1>
+                        <h3 class="text-xl font-bold">Back End Web Dev</h3>
+                        <h1 class="text-2xl text-blue-500"> &#8358 150,000</h1>
+                        <h1 class="text-xl font-bold text-blue-500">Duration: <span class="font-normal text-blue-500">3 Months</span></h1>
+                        <h1 class="">Mode of teaching: Physical</h1>
                         <p class="font-light">Our academic coaching program helps students develop effective study habits and strategies to achieve their academic goals.</p>
                         <img src="https://example.com/academic-coaching.jpg" alt="Academic Coaching" class="program-background">
-                        <a href="" class="self-center bg-slate-200 rounded-xl p-2 border-blue-100 border-[1px] hover:bg-slate-400 hover:text-white">Enrole for this Course</a>
+                        <a href="back-end.html" class="self-center bg-slate-200 rounded-xl p-2 border-blue-100 border-[1px] hover:bg-slate-400 hover:text-white">Enrole for this Course</a>
                     </div>
+
+                    <div class="bg-slate-100 rounded-xl p-5 border-gray-300 border-[1px] flex flex-col gap-3">
+                        <h3 class="text-xl font-bold">Data Analysis</h3>
+                        <h1 class="text-2xl text-blue-500"> &#8358 300,000</h1>
+                        <h1 class="text-xl font-bold text-blue-500">Duration: <span class="font-normal text-blue-500">3 Months</span></h1>
+                        <h1 class="">Mode of teaching: Physical</h1>
+                        <p class="font-light">Our academic coaching program helps students develop effective study habits and strategies to achieve their academic goals.</p>
+                        <img src="https://example.com/academic-coaching.jpg" alt="Academic Coaching" class="program-background">
+                        <a href="data.html" class="self-center bg-slate-200 rounded-xl p-2 border-blue-100 border-[1px] hover:bg-slate-400 hover:text-white">Enrole for this Course</a>
+                    </div>
+
+                    <div class="bg-slate-100 rounded-xl p-5 border-gray-300 border-[1px] flex flex-col gap-3">
+                        <h3 class="text-xl font-bold">Diploma</h3>
+                        <h1 class="text-2xl text-blue-500"> &#8358 75,000</h1>
+                        <h1 class="text-xl font-bold text-blue-500">Duration: <span class="font-normal text-blue-500">3 Months</span></h1>
+                        <h1 class="">Mode of teaching: Physical</h1>
+                        <p class="font-light">Our academic coaching program helps students develop effective study habits and strategies to achieve their academic goals.</p>
+                        <img src="https://example.com/academic-coaching.jpg" alt="Academic Coaching" class="program-background">
+                        <a href="diploma.html" class="self-center bg-slate-200 rounded-xl p-2 border-blue-100 border-[1px] hover:bg-slate-400 hover:text-white">Enrole for this Course</a>
+                    </div>
+
+                    <div class="bg-slate-100 rounded-xl p-5 border-gray-300 border-[1px] flex flex-col gap-3">
+                        <h3 class="text-xl font-bold">Python</h3>
+                        <h1 class="text-2xl text-blue-500"> &#8358 150,000</h1>
+                        <h1 class="text-xl font-bold text-blue-500">Duration: <span class="font-normal text-blue-500">3 Months</span></h1>
+                        <h1 class="">Mode of teaching: Physical</h1>
+                        <p class="font-light">Our academic coaching program helps students develop effective study habits and strategies to achieve their academic goals.</p>
+                        <img src="https://example.com/academic-coaching.jpg" alt="Academic Coaching" class="program-background">
+                        <a href="python.html" class="self-center bg-slate-200 rounded-xl p-2 border-blue-100 border-[1px] hover:bg-slate-400 hover:text-white">Enrole for this Course</a>
+                    </div>
+
 
                     
                 </div>
             </section>
 
+            <!-- Everywhere!! -->
+            <div id="Support" class="fixed p-2 bg-black rounded-full bottom-5 right-5 " onclick="support()">
+                <img class="w-10" src="/Project/images/icons8-support-100 (2).png" alt="">
+            </div>
+
+        </div>
+
+        <div id="Support-main" class="fixed hidden flex-col p-10 bg-blue-200 bg-opacity-80 rounded-3xl bottom-[15%] left-[5%] w-[90%] rounded-br-none">
+            <div class="absolute p-3 border-black rounded-full top-5 right-5 w-fit h-fit">
+                <img id="support-close" onclick="supportno()" class="w-8 " src="/Project/images/icons8-close.svg" alt="">
+            </div>
+            <div class="flex flex-col gap-5 py-5">
+                <h1 class="text-xl font-bold">Hello...</h1>
+                <p class="italic ">If you're confused or there are questions you'd like to ask or even there's something wrong that we might have overlooked unintentionally, please follow the below link, get answers to freaquesntly asked questions and report bugs and errors. Thank you</p>
+    
+                <div id="follow" class="self-center p-3 bg-blue-700 rounded-lg w-fit hover:text-white">"Help Us Help you"</div>
+                
+            </div>
         </div>
 
 
-    <footer id="footer" class="relative bottom-0 flex items-center justify-center w-full bg-blue-100 text-slate-900 py-7">
+    <footer id="footer" class="bottom-0 flex items-center justify-center w-full bg-blue-100 text-slate-900 py-7">
         <div id="Foot" class="flex">
             <div>
-                <img src="/Project/images/logo.jpg" alt="" class="absolute w-10 rounded-full left-3">
+                <img onclick="logo()" src="/Project/images/logo.jpg" alt="" class="absolute w-10 rounded-full left-3">
             </div>
     
             <div id="foot" class="flex flex-col gap-7">

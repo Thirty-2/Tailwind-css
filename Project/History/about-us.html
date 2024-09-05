@@ -44,6 +44,47 @@
             object-fit: cover;
         }
 
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(images/stream-binary-code-design-vector_53876-170626.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .content {
+            padding: 2rem;
+            color: white;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+
+        .img {
+            display: block;
+            margin: 1rem auto;
+            border-radius: 50%;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .success {
+            border: solid 1px gray;
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: rgba(105, 156, 197, 0.144);
+            margin-bottom: 1rem;
+        }
+
+
+
         
     </style>
 </head>
@@ -71,7 +112,7 @@
 
                 <div id="nav" class="flex flex-col text-lg font-bold text-right text-white list-none">
 
-                    <div id="Theme" class="flex items-center">
+                    <!-- <div id="Theme" class="flex items-center">
                         <div>
                             <img src="/Project/images/icons8-night-100.png" alt="" class="w-6">
                         </div>
@@ -85,7 +126,7 @@
                         <div>
                             <img src="/Project/images/icons8-sun-100.png" alt="" class="w-6">
                         </div>
-                    </div>
+                    </div> -->
                     <li><a href="">Home</a></li>
                     <li><a href="/Project/Enrol/Enrol.html">Enrole</a></li>
                     <li><a href="/Project/History/about-us.html">About us</a></li>
@@ -97,8 +138,63 @@
 
         <div id="Mid" class="flex flex-col items-center justify-center gap-10 pt-40 pb-64">
             
+            <div class="content">
+                <section class="success">
+                    <h1>About Zion Study Center</h1>
+                    <p>Zion Study Center is dedicated to creating an environment conducive to academic excellence. Our mission is to provide students with the resources and support they need to succeed in their studies. We offer a quiet, well-equipped space for focused learning.</p>
+                    <p>Welcome to an education center for world changers, welcome to Zion Study Center and Leadership Academy where we raise world changers and prepare young minds for the age of artificial intelligence. Zion Study Centre and Leadership Academy (Limited) was born in 2002 and incorporated after 10 years. It’s beyond an extra mural but a study Centre with a great vision.</p>
+                    <p>Zion Study Centre offers intensive coaching for students preparing for any forms of examinations both locally and internationally. We manage students, offer career counseling on their academic future, and guide them in the selection of courses into universities, both I/Q and E/Q. Zion Study Centre is a modern organization set up to bring out the best in students and ignite the fire of greatness in them. We also provide scholarships through our foundation to intelligent students from humble homes.</p>
+                </section>
+        
+                <section class="success">
+                    <h1>Our Instructors</h1>
+                    <p>These are tested hands known everywhere in F.C.T — Young, dynamic, and intelligent brains who are strategists, thinkers, and motivators that can bring out the best in any student. (Remember that the best teachers nurture the worst child to become the best and greatest). We also prepare students for foreign examinations and guide them on how to manage themselves on campus, how to live a meaningful life, and how to affect their environment.</p>
+                </section>
+        
+                <section class="success">
+                    <h1>Our Success Stories</h1>
+                    <ul>
+                        <li>2010 — 184 students</li>
+                        <li>2011 — 261 students</li>
+                        <li>2012 — 356 students</li>
+                        <li>2013 — 883 students</li>
+                        <li>2014 — 860 students</li>
+                        <li>2015 — 806 students (election year)</li>
+                        <li>2016 — 1117 students</li>
+                        <li>2017 — 702 students</li>
+                    </ul>
+                </section>
+        
+                <section class="flex flex-col items-center success">
+                    <h1>Our Founder</h1>
+                    <p>Founded by Toyin Joseph, a young, vibrant educational enthusiast who started his education journey at the Federal College of Education, Okene, and later moved to the University of Abuja, where he earned a B.Sc in Political Science & International Relations. His passion for educating and enlightening young minds toward their future ambitions did not end there but moved him closer to his dreams.</p>
+                    <p>Unlike other teachers who started teaching as a means to an end, Mr. Toyin began his journey to inspire young minds fortunate to come across his path as a tutor at St. Augustus College in Kabba in 1998 before moving to Jewel Model School Kubwa from Nov. 2000 – Aug. 2002. Still, in quest of a deeper understanding of the education system and the complexities of young minds, he moved to Turkish Secondary School Wuse 2 in Sept. 2002. He later joined the FCT Teaching Board, where he taught at P.W L.E.A Pry School Kubwa from 2002–2005, Government Secondary School Kubwa from 2005–2009, and Government Secondary School Maitama from late 2009–2010. He was also a part-time lecturer in political science for two years at the University of Abuja. Before fully committing to the next generation, he gained vast experience in the system, becoming a father figure, poet, orator, thinker, and the Chief Executive Officer of Zion Study Centre and Leadership Academy Kubwa.</p>
+                    <p>He is a teacher, education consultant, and strategist who resigned from the civil service to give full attention to the great institution he founded, the “ZION STUDY CENTRE.” He is the author of "ALL YOU NEED IN GOVERNMENT" and the publisher of the weekly magazine “ECHOES FROM ZION.” He is a God-fearing, kind, intelligent, and dynamic gentleman.</p>
+                    <img class="self-center w-40 rounded-full" src="/Project/images/baba t.jpg" alt="Picture of the founder Toyin Joseph">
+                </section>
+        
+                <a href="index.html">Back to home page</a>
+            </div>
+        
+            <div id="Support" class="fixed p-2 bg-black rounded-full bottom-5 right-5 " onclick="support()">
+                <img class="w-10" src="/Project/images/icons8-support-100 (2).png" alt="">
+            </div>
+
         </div>
 
+    </div>
+
+    <div id="Support-main" class="fixed hidden flex-col p-10 bg-blue-200 bg-opacity-80 rounded-3xl bottom-[15%] left-[5%] w-[90%] rounded-br-none">
+        <div class="absolute p-3 border-black rounded-full top-5 right-5 w-fit h-fit">
+            <img id="support-close" onclick="supportno()" class="w-8 " src="/Project/images/icons8-close.svg" alt="">
+        </div>
+        <div class="flex flex-col gap-5 py-5">
+            <h1 class="text-xl font-bold">Hello...</h1>
+            <p class="italic ">If you're confused or there are questions you'd like to ask or even there's something wrong that we might have overlooked unintentionally, please follow the below link, get answers to freaquesntly asked questions and report bugs and errors. Thank you</p>
+
+            <div id="follow" class="self-center p-3 bg-blue-700 rounded-lg w-fit hover:text-white">"Help Us Help you"</div>
+            
+        </div>
     </div>
 
     <footer id="footer" class="relative bottom-0 flex items-center justify-center w-full bg-blue-100 text-slate-900 py-7">

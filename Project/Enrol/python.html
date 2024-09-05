@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zion Study Center//official-Website/home</title>
+    <meta name="description" content="Zion Zion-Study-Center Kubwa-Phase-4 Zion-Towers">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/Project/index.css/output.css">
+    <style>
+
+
+        nav li {  padding: .5rem; cursor: pointer; }
+
+        /* header */
+        header { background-color: rgba(0, 0, 0, 0.285); }
+        /* ham */
+        #ham { background-color: rgba(0, 0, 0, 0.285); }
+
+        /* Mid */
+        #Middle { background-color: rgba(124, 151, 142, 0.307); border-radius: 1rem; flex-direction: column; gap: 2rem; width: 95%; }
+
+        /* Course */
+        #Course { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* course */
+        #course { font-weight: 400; }
+
+        /* Name */
+        #userName2 { display: flex; font-weight: 700; justify-content: space-between; }
+        
+        /* name */
+        #name { font-weight: 400; }
+
+        /* Age */
+        #userAge2 { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* age */
+        #age { font-weight: 400; }
+
+        /* Gender */
+        #userGender2 { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* gender */
+        #gender { font-weight: 400; }
+
+        /* Duration */
+        #userDuration2 { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* duration */
+        #duration { font-weight: 400; }
+
+        /* Fees */
+        #userFees2 { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* fees */
+        #fees { font-weight: 400; }
+        
+        /* Status */
+        #userStatus2 { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* status */
+        #status { font-weight: 400; color: green; }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div id="Container" class="h-full rounded-lg">
+        
+
+        <header id="header" class="fixed flex items-center justify-between w-full p-3">
+            <div>
+                <img onclick="logo()" src="/Project/images/logo.jpg" alt="" class="w-10 rounded-full">
+            </div>
+
+            <div id="right-head" class="flex gap-3">
+    
+                <div>
+                    <img id="menu-open" src="/Project/images/icons8-menu-100white.png" alt="" class="w-8 cursor-pointer ">
+                </div>
+            </div>
+
+            <nav id="ham" class="absolute px-9 py-5  bg-white h-[100vh] w-[70vw] right-0 top-0 hidden flex-col gap-1 ">
+                <img src="/Project/images/icons8-close-100white.png" alt="" class="relative w-8 left-48" id="menu-close">
+                
+
+                <div id="nav" class="flex flex-col text-lg font-bold text-right text-white list-none">
+
+                    <!-- <div id="Theme" class="flex items-center">
+                        <div>
+                            <img src="/Project/images/icons8-night-100.png" alt="" class="w-6">
+                        </div>
+                        <div id="theme-C" class="relative h-6 bg-black rounded-xl px-7">
+    
+                            <div id="Switch1" class="absolute hidden p-2 bg-black rounded-full cursor-pointer left-1 top-1"></div>
+    
+                            <div id="Switch2" class="absolute p-2 bg-white rounded-full cursor-pointer right-1 top-1"></div>
+                        </div>
+    
+                        <div>
+                            <img src="/Project/images/icons8-sun-100.png" alt="" class="w-6">
+                        </div>
+                    </div> -->
+                    <li><a href="">Home</a></li>
+                    <li><a href="/Project/Enrol/Enrol.html">Enrole</a></li>
+                    <li><a href="/Project/History/about-us.html">About us</a></li>
+                    <li><a href="press.html">Press</a></li>
+                </div>
+            </nav>
+
+        </header>
+
+        <div id="Mid" class="flex flex-col items-center justify-center gap-10 py-20">
+            
+            <form id="form" action="" class="flex flex-col w-full gap-5 p-5 m-auto">
+                <p class="text-sm italic font-light">Fill The form accurately..</p>
+                <div class="flex flex-col gap-3">
+                    <div>
+                        <input type="text" name="" id="userName" placeholder="Enter full name" class="w-full p-3 font-semibold border-2 rounded-md">
+                        <p id="error-txt" class="hidden text-sm italic font-light text-red-600">This is required!</p>
+                    </div>
+                    <div>
+                        <input type="number" name="" id="userAge" placeholder="Enter age" class="w-full p-3 font-semibold border-2 rounded-md">
+                        <p id="error-txt2" class="hidden text-sm italic font-light text-red-600">This is required!</p>
+                    </div>
+            
+                </div>
+                <div class="flex items-center gap-5">
+
+                    <div class="p-2 border-2 rounded-md">
+                        <select name="" id="Select" class="outline-none">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="p-1.5 text-center  flex flex-col gap-4">
+                    <label for="Duration" class="text-xl font-bold">Course</label>
+                    <h1 id="courseName" class="text-xl font-normal text-blue-500">Python</span></h1>
+
+                </div>
+                <div class="p-1.5 text-center  flex flex-col gap-4">
+                    <label for="Duration" class="text-xl font-bold">Duration</label>
+                    <h1 id="courseDuration" class="text-xl font-normal text-blue-500">3 Months</span></h1>
+
+                </div>
+                <div class="p-1.5 text-center  flex flex-col gap-4">
+                    <label for="Duration" class="text-xl font-bold">Fees</label>
+                    <h1 id="courseFees" class="text-xl text-blue-500"> &#8358 150,000</h1>
+
+                </div>
+
+                <div class="flex flex-col gap-5 text-center">
+            
+                    <label for="Payment type" class="font-light text-center ">Payment type</label>
+            
+                    <div id="transfer" class="flex flex-col gap-5">
+                        <div>
+                            <p class="font-bold">Account Name <h2 class="text-3xl text-blue-500">Zion Study Center</h2>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Account Number <h2 class="text-3xl text-blue-500">**********</h2></p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div onclick="Submit()" class="self-center px-10 py-2 border-2 rounded-md">Submit</div>
+            </form>
+
+            <!-- Middle -->
+            <div id="Middle" class="hidden p-5 ">
+                <p id="Course">COURSE: <span id="course">Front End Web Development</span></p>
+                <p id="userName2">FULL NAME: <span id="name">jOHN MENDEs</span></p>
+                <p id="userAge2">AGE: <span id="age">30</span></p>
+                <p id="userGender2">GENDER: <span id="gender">Male</span></p>
+                <p id="userDuration2">DURATION: <span id="duration">3 Months</span></p>
+                <p id="userFees2">Fees: <span id="fees">&#8358 150,000</span></p>
+                <p id="userStatus2">STATUS: <span id="status">Active</span></p>
+            </div>
+            
+ 
+            </div>
+            
+            
+        </div>
+        <div id="Confirm" class="absolute z-10 hidden flex-col items-center gap-2 text-center top-[40%] left-[33%]">
+            <img src="/Project/images/icons8-approved-188.png" alt="" class="w-32 " id="approved">
+            <p class="font-bold">Payment Approved</p>
+            <p class="font-bold">Thank You!</p>
+        </div>
+
+            <!-- Everywhere!! -->
+            <div id="Support" class="fixed p-2 bg-black rounded-full bottom-5 right-5 " onclick="support()">
+                <img class="w-10" src="/Project/images/icons8-support-100 (2).png" alt="">
+            </div>
+
+    </div>
+
+    <div id="Support-main" class="fixed hidden flex-col p-10 bg-blue-200 bg-opacity-80 rounded-3xl bottom-[15%] left-[5%] w-[90%] rounded-br-none">
+        <div class="absolute p-3 border-black rounded-full top-5 right-5 w-fit h-fit">
+            <img id="support-close" onclick="supportno()" class="w-8 " src="/Project/images/icons8-close.svg" alt="">
+        </div>
+        <div class="flex flex-col gap-5 py-5">
+            <h1 class="text-xl font-bold">Hello...</h1>
+            <p class="italic ">If you're confused or there are questions you'd like to ask or even there's something wrong that we might have overlooked unintentionally, please follow the below link, get answers to freaquesntly asked questions and report bugs and errors. Thank you</p>
+
+            <div id="follow" class="self-center p-3 bg-blue-700 rounded-lg w-fit hover:text-white">"Help Us Help you"</div>
+            
+        </div>
+    </div>
+
+    <footer id="footer" class="bottom-0 flex items-center justify-center w-full bg-blue-100 text-slate-900 py-7">
+        <div id="Foot" class="flex">
+            <div>
+                <img onclick="logo()" src="/Project/images/logo.jpg" alt="" class="absolute w-10 rounded-full left-3">
+            </div>
+    
+            <div id="foot" class="flex flex-col gap-7">
+    
+                <div id="foot-1" class="flex flex-col gap-5 text-center list-none">
+    
+    
+                    <div id="foot-1-2">
+                        <p class="text-lg font-semibold text-black">Resources</p>
+                        <li><a href="">Developers</a></li>
+                        <li><a href="">Support</a></li>
+                    </div>
+    
+                    <div id="foot-1-3">
+                        <p class="text-lg font-semibold text-black">Company</p>
+                        <li><a href="">Our Web Dev Team</a></li>
+                        <li><a href="">Job Openings</a></li>
+                        <li><a href="">Contact</a></li>
+                    </div>
+    
+                    <div id="foot-1-3">
+                        <p class="text-lg font-semibold text-black">Pricing</p>
+                        <li><a href="pricing.html">View Offers</a></li>
+                    </div>
+    
+    
+    
+    
+                </div>
+    
+                <div id="foot-2" class="flex justify-center gap-3">
+    
+                    <div >
+                        <img src="/Project/images/icon-facebook.svg" alt="" onclick="facebook()" >
+                    </div>
+                    <div>
+                        <img src="/Project/images/icon-twitter.svg" alt="" onclick="twitter()">
+                    </div>
+                    <div>
+                        <img src="/Project/images/icon-instagram.svg" alt="" onclick="insta()">
+                    </div>
+                </div>
+
+                <p>&copy; Zion-Study-Center. All rights reserved.</p>
+    
+            </div>
+
+        </div>
+    </footer>
+
+<script src="/Project/index.js/index.js"></script>
+</body>
+
+</html>

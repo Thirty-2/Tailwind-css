@@ -18,6 +18,51 @@
         /* ham */
         #ham { background-color: rgba(0, 0, 0, 0.285); }
 
+        /* Mid */
+        #Middle { background-color: rgba(124, 151, 142, 0.307); border-radius: 1rem; flex-direction: column; gap: 2rem; width: 95%; }
+
+        /* Course */
+        #Course { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* course */
+        #course { font-weight: 400; }
+
+        /* Name */
+        #userName2 { display: flex; font-weight: 700; justify-content: space-between; }
+        
+        /* name */
+        #name { font-weight: 400; }
+
+        /* Age */
+        #userAge2 { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* age */
+        #age { font-weight: 400; }
+
+        /* Gender */
+        #userGender2 { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* gender */
+        #gender { font-weight: 400; }
+
+        /* Duration */
+        #userDuration2 { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* duration */
+        #duration { font-weight: 400; }
+
+        /* Fees */
+        #userFees2 { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* fees */
+        #fees { font-weight: 400; }
+        
+        /* Status */
+        #userStatus2 { display: flex; font-weight: 700; justify-content: space-between; }
+
+        /* status */
+        #status { font-weight: 400; color: green; }
+
         
     </style>
 </head>
@@ -45,7 +90,7 @@
 
                 <div id="nav" class="flex flex-col text-lg font-bold text-right text-white list-none">
 
-                    <div id="Theme" class="flex items-center">
+                    <!-- <div id="Theme" class="flex items-center">
                         <div>
                             <img src="/Project/images/icons8-night-100.png" alt="" class="w-6">
                         </div>
@@ -59,7 +104,7 @@
                         <div>
                             <img src="/Project/images/icons8-sun-100.png" alt="" class="w-6">
                         </div>
-                    </div>
+                    </div> -->
                     <li><a href="">Home</a></li>
                     <li><a href="/Project/Enrol/Enrol.html">Enrole</a></li>
                     <li><a href="/Project/History/about-us.html">About us</a></li>
@@ -71,44 +116,43 @@
 
         <div id="Mid" class="flex flex-col items-center justify-center gap-10 py-20">
             
-            <form action="" method="post" class="flex flex-col w-full gap-5 p-5 m-auto">
+            <form id="form" action="" class="flex flex-col w-full gap-5 p-5 m-auto">
                 <p class="text-sm italic font-light">Fill The form accurately..</p>
                 <div class="flex flex-col gap-3">
                     <div>
-                        <input type="text" name="Name" id="Name" placeholder="Enter full name" class="w-full p-3 font-semibold border-2 rounded-md" required>
+                        <input type="text" name="" id="userName" placeholder="Enter full name" class="w-full p-3 font-semibold border-2 rounded-md">
+                        <p id="error-txt" class="hidden text-sm italic font-light text-red-600">This is required!</p>
                     </div>
                     <div>
-                        <input type="number" name="Name" id="Age" placeholder="Enter age (optional)" class="w-full p-3 font-semibold border-2 rounded-md">
+                        <input type="number" name="" id="userAge" placeholder="Enter age" class="w-full p-3 font-semibold border-2 rounded-md">
+                        <p id="error-txt2" class="hidden text-sm italic font-light text-red-600">This is required!</p>
                     </div>
             
                 </div>
                 <div class="flex items-center gap-5">
+
                     <div class="p-2 border-2 rounded-md">
                         <select name="" id="Select" class="outline-none">
-                            <option id="select1" value="Male" class="">Male</option>
-                            <option id="select1" value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
                         </select>
                     </div>
+
+                </div>
+                <div class="p-1.5 text-center  flex flex-col gap-4">
+                    <label for="Duration" class="text-xl font-bold">Course</label>
+                    <h1 id="courseName" class="text-xl font-normal text-blue-500">Front End Web Development</span></h1>
+
                 </div>
                 <div class="p-1.5 text-center  flex flex-col gap-4">
                     <label for="Duration" class="text-xl font-bold">Duration</label>
+                    <h1 id="courseDuration" class="text-xl font-normal text-blue-500">3 Months</span></h1>
 
-                    <span id="Duration-front-end" class="flex items-center self-center justify-between w-1/2">
-
-                        <img id="minus" src="/Project/images/icons8-minus-100.png" alt="" class="w-6">
-
-                        <span id="months">1</span>
-
-                        <img id="plus" src="/Project/images/icons8-plus-100.png" alt="" class="w-6">
-
-                    </span>
                 </div>
                 <div class="p-1.5 text-center  flex flex-col gap-4">
                     <label for="Duration" class="text-xl font-bold">Fees</label>
+                    <h1 id="courseFees" class="text-xl text-blue-500"> &#8358 150,000</h1>
 
-                    <span id="Duration-front-end" class="flex items-center self-center">
-                        <span id="price-front" class="">&#8358 50,000</span>
-                    </span>
                 </div>
 
                 <div class="flex flex-col gap-5 text-center">
@@ -126,26 +170,52 @@
                     </div>
                 </div>
             
-                <button type="submit" class="p-3 font-bold uppercase border-2" onclick="Approved()">submit</button>
+                <div onclick="Submit()" class="self-center px-10 py-2 border-2 rounded-md">Submit</div>
             </form>
+
+            <!-- Middle -->
+            <div id="Middle" class="hidden p-5 ">
+                <p id="Course">COURSE: <span id="course">Front End Web Development</span></p>
+                <p id="userName2">FULL NAME: <span id="name">jOHN MENDEs</span></p>
+                <p id="userAge2">AGE: <span id="age">30</span></p>
+                <p id="userGender2">GENDER: <span id="gender">Male</span></p>
+                <p id="userDuration2">DURATION: <span id="duration">3 Months</span></p>
+                <p id="userFees2">Fees: <span id="fees">&#8358 150,000</span></p>
+                <p id="userStatus2">STATUS: <span id="status">Active</span></p>
+            </div>
             
-            
-            
-            
-            
+ 
             </div>
             
             
         </div>
-        <div id="Confirm" class="absolute z-10 hidden flex flex-col items-center gap-2 text-center top-[40%] left-[33%]">
+        <div id="Confirm" class="absolute z-10 hidden flex-col items-center gap-2 text-center top-[40%] left-[33%]">
             <img src="/Project/images/icons8-approved-188.png" alt="" class="w-32 " id="approved">
             <p class="font-bold">Payment Approved</p>
             <p class="font-bold">Thank You!</p>
         </div>
 
+            <!-- Everywhere!! -->
+            <div id="Support" class="fixed p-2 bg-black rounded-full bottom-5 right-5 " onclick="support()">
+                <img class="w-10" src="/Project/images/icons8-support-100 (2).png" alt="">
+            </div>
+
     </div>
 
-    <footer id="footer" class="relative bottom-0 flex items-center justify-center w-full bg-blue-100 text-slate-900 py-7">
+    <div id="Support-main" class="fixed hidden flex-col p-10 bg-blue-200 bg-opacity-80 rounded-3xl bottom-[15%] left-[5%] w-[90%] rounded-br-none">
+        <div class="absolute p-3 border-black rounded-full top-5 right-5 w-fit h-fit">
+            <img id="support-close" onclick="supportno()" class="w-8 " src="/Project/images/icons8-close.svg" alt="">
+        </div>
+        <div class="flex flex-col gap-5 py-5">
+            <h1 class="text-xl font-bold">Hello...</h1>
+            <p class="italic ">If you're confused or there are questions you'd like to ask or even there's something wrong that we might have overlooked unintentionally, please follow the below link, get answers to freaquesntly asked questions and report bugs and errors. Thank you</p>
+
+            <div id="follow" class="self-center p-3 bg-blue-700 rounded-lg w-fit hover:text-white">"Help Us Help you"</div>
+            
+        </div>
+    </div>
+
+    <footer id="footer" class="bottom-0 flex items-center justify-center w-full bg-blue-100 text-slate-900 py-7">
         <div id="Foot" class="flex">
             <div>
                 <img src="/Project/images/logo.jpg" alt="" class="absolute w-10 rounded-full left-3">

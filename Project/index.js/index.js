@@ -1,9 +1,9 @@
 //HOME
 
         //home redirect
-        document.getElementById('logo').addEventListener('click', () => {
+        function logo(){
             location.href = "/Project/Home/index.html"
-        });
+        }
         
         //menu
             document.getElementById('menu-open').addEventListener('click', () => {
@@ -43,22 +43,24 @@
 //duration
 //front end
 
-            let month = 1;
-            document.getElementById("plus").addEventListener("click", () => {
-            if (month < 6) document.getElementById("months").innerHTML = ++month;
-            const Price = 50000 * month;
-            document.getElementById("price-front").innerHTML = "&#8358 "+ Price.toLocaleString("en-GB");
-        });
+        //     const Person = {};
+
+        //     let month = 1;
+        //     document.getElementById("plus").addEventListener("click", () => {
+        //     if (month < 6) document.getElementById("months").innerHTML = ++month;
+        //     const Price = 50000 * month;
+        //     document.getElementById("price-front").innerHTML = "&#8358 "+ Price.toLocaleString("en-GB");
+        // });
         
 
 
-            document.getElementById("minus").addEventListener("click", () => {
-            if (month > 1) {
-                document.getElementById("months").innerHTML = --month;
-                const Price = 50000 * month;
-                document.getElementById("price-front").innerHTML = "&#8358 "+ Price.toLocaleString("en-GB");
-            }
-                    });
+        //     document.getElementById("minus").addEventListener("click", () => {
+        //     if (month > 1) {
+        //         document.getElementById("months").innerHTML = --month;
+        //         const Price = 50000 * month;
+        //         document.getElementById("price-front").innerHTML = "&#8358 "+ Price.toLocaleString("en-GB");
+        //     }
+        //             });
 
 //back end 
             // let month2 = 1;
@@ -79,22 +81,62 @@
 
 
 //Approved
-            const Name = document.getElementById("Name").value;
-            const Age = document.getElementById("Age").value;
-            const selection = document.getElementById('select1').value;
-            const selection2 = document.getElementById('select2').value;
 
-            const Person = {};
-            function Approved() {
-            // if (Name) {
-            //     document.getElementById("Name").style.border = "red";
-            // } else {
-            //     document.getElementById("Confirm").style.display = "flex";
-            //     document.getElementById("Container").style.filter = "blur(5px)";
-            // }
 
-                Name.push
+    //form
+    
+
+    
+    function Submit(){
+        const selectElement = document.getElementById('Select');
+    
+        const selectedOptions = selectElement.selectedOptions;
+        const Name = document.getElementById('userName').value;
+        const Age = document.getElementById('userAge').value;
+        if(!Name){
+            document.getElementById('userName').style.outline = "1px solid red"
+            document.getElementById('error-txt').style.display = "flex"
+
+        }if(!Age){
+            document.getElementById('userAge').style.outline = "1px solid red"
+            document.getElementById('error-txt2').style.display = "flex"
+        } else {
+            setTimeout(() => {
+                document.getElementById('Confirm').style.display = "flex"
+                document.getElementById('Container').style.filter = "blur(5px)"
+                document.getElementById('footer').style.filter = "blur(5px)"
+            })
+            setTimeout(() => {
+                document.getElementById('Confirm').style.display = "none"
+                document.getElementById('Container').style.filter = "none"
+                document.getElementById('footer').style.filter = "none"
+            }, 3000)
+
+            document.getElementById('userName').style.outline = "1px solid green"
+            document.getElementById('userAge').style.outline = "1px solid green"
+            document.getElementById('error-txt').style.display = "none" 
+
+            setInterval(() => {
+                document.getElementById('form').style.display = "none"
+                document.getElementById('Middle').style.display = "flex"
+            }, 3000)
+
+            document.getElementById('course').innerHTML = document.getElementById('courseName').innerHTML;
+
+            document.getElementById('duration').innerHTML = document.getElementById('courseDuration').innerHTML;
+
+            document.getElementById('fees').innerHTML = document.getElementById('courseFees').innerHTML;
+
+            document.getElementById('name').innerHTML = document.getElementById('userName').value;
+            document.getElementById('age').innerHTML = document.getElementById('userAge').value;
+
+            for (const option of selectedOptions) {
+                document.getElementById('gender').innerHTML = option.value;
             }
+        }
+
+    }
+            
 
 
     //footer
@@ -108,6 +150,12 @@
 
             function insta(){
                 location.href = "https://www.instagram.com/zionstudy1/"
+            };
+
+//support
+            function support(){
+                document.getElementById('Support-main').style.display ="flex"
             }
-
-
+            function supportno(){
+                document.getElementById('Support-main').style.display ="none"
+            }
