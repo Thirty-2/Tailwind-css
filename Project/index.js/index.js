@@ -2,7 +2,7 @@
 
         //home redirect
         function logo(){
-            location.href = "/Project/Home/index.html"
+            location.href = "index.html"
         }
         
         //menu
@@ -161,5 +161,5 @@
             }
 
             function follow(){
-                location.href = "/Project/footer/support.html"
+                location.href = "support.html"
             }
