@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zion Study Center//official-Website/home</title>
+    <meta name="description" content="Zion Zion-Study-Center Kubwa-Phase-4 Zion-Towers">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/Project/index.css/output.css">
+    <style>
+
+
+        nav li {
+            padding: .5rem;
+            cursor: pointer;
+        }
+
+        /* header */
+        header {
+            background-color: rgba(0, 0, 0, 0.285);
+        }
+
+        /* ham */
+        #ham {
+            background-color: rgba(0, 0, 0, 0.771);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: .7rem;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card .job-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card .job-description {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .card .job-salary {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card .portfolio-link{}
+        
+
+        .card .portfolio-link:hover {
+            
+        }
+
+        .card .availabilityred {
+            color: red;
+        }
+        .card .availabilitygreen {
+            color: green;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="Container" class="relative h-full rounded-lg">
+
+
+        <header id="header" class="fixed flex items-center justify-between w-full p-3">
+            <div>
+                <img onclick="logo()" src="/Project/images/logo.jpg" alt="" class="w-10 rounded-full">
+            </div>
+
+            <div id="right-head" class="flex gap-3">
+
+                <div>
+                    <img id="menu-open" src="/Project/images/icons8-menu-100white.png" alt=""
+                        class="w-8 cursor-pointer ">
+                </div>
+            </div>
+
+            <nav id="ham"
+                class="absolute px-9 py-5  bg-white h-[100vh] w-[70vw] right-0 top-0 hidden flex-col gap-1 z-10">
+                <img src="/Project/images/icons8-close-100white.png" alt="" class="relative w-8 left-48"
+                    id="menu-close">
+
+
+                <div id="nav" class="flex flex-col text-lg font-bold text-right text-white list-none">
+
+                    <!-- <div id="Theme" class="flex items-center">
+                        <div>
+                            <img src="/Project/images/icons8-night-100.png" alt="" class="w-6">
+                        </div>
+                        <div id="theme-C" class="relative h-6 bg-black rounded-xl px-7">
+    
+                            <div id="Switch1" class="absolute hidden p-2 bg-black rounded-full cursor-pointer left-1 top-1"></div>
+    
+                            <div id="Switch2" class="absolute p-2 bg-white rounded-full cursor-pointer right-1 top-1"></div>
+                        </div>
+    
+                        <div>
+                            <img src="/Project/images/icons8-sun-100.png" alt="" class="w-6">
+                        </div>
+                    </div> -->
+                    <li><a href="">Home</a></li>
+                    <li><a href="/Project/Enrol/Enrol.html">Enrole</a></li>
+                    <li><a href="/Project/History/about-us.html">About us</a></li>
+                    <li><a href="press.html">Press</a></li>
+                </div>
+            </nav>
+
+        </header>
+
+
+
+        <div  class="flex flex-col gap-5 m-auto items-center py-32">
+            
+            <h1 class="text-2xl font-bold">Job Opportunities</h1>
+            <div class="card">
+
+                <div class="job-title">Front-End Toutor</div>
+                <div class="job-description">We are seeking a highly skilled JavaScript teacher to join our team.
+                    The ideal candidate will have experience teaching JavaScript to students of all skill levels and
+                    will be able to create engaging and interactive lesson plans.</div>
+                <div class="job-salary">&#8358 200,000</div>
+                <div class="bg-slate-200 p-2 rounded-xl w-fit italic hover:bg-slate-400 hover:text-white"><a href="https://shorturl.at/93wtT">View Offer</a></div>
+                <div class="availabilityred">Unavailable</div>
+            </div>
+            <div class="card">
+
+                <div class="job-title">Data Analysis Toutor</div>
+                <div class="job-description">We are seeking a highly skilled data analysis teacher to join our team.
+                    The ideal candidate will have experience teaching data analysis to students of all skill levels
+                    and will be able to create engaging and interactive lesson plans.</div>
+                <div class="job-salary"> &#8358 200,000</div>
+                <div class="bg-slate-200 p-2 rounded-xl w-fit italic hover:bg-slate-400 hover:text-white"><a
+                        href="https://careerfoundry.com/en/blog/data-analytics/data-analytics-portfolio-examples/">View Offer</a></div>
+                <div class="availabilitygreen">Available</div>
+            </div>
+            <div class="card">
+
+                <div class="job-title">Back-End Toutor</div>
+                <div class="job-description">We are seeking a highly skilled Python developer to join our team. The
+                    ideal candidate will have experience building scalable and efficient Python applications and
+                    will be able to work collaboratively with our team.</div>
+                <div class="job-salary">&#8358 200,000</div>
+                <div class="bg-slate-200 p-2 rounded-xl w-fit italic hover:bg-slate-400 hover:text-white"><a
+                        href="https://dribbble.com/shots/18556520-Python-Developer-Portfolio-Website">View Offer</a></div>
+                <div class="availabilitygreen">Available</div>
+            </div>
+            <div class="card">
+                <div class="job-title">SAT, WAEC, NECO Toutor</div>
+                <div class="job-description">We are seeking a highly skilled teacher to join our team. The ideal
+                    candidate will have experience teaching SAT, WAEC, and NECO subjects to students of all skill
+                    levels and will be able to create engaging and interactive lesson plans.</div>
+                <div class="job-salary">&#8358 150,000</div>
+                <div class="bg-slate-200 p-2 rounded-xl w-fit italic hover:bg-slate-400 hover:text-white"><a href="#">View Offer</a></div>
+                <div class="availabilitygreen">Available</div>
+            </div>
+
+            <div class="card">
+
+                <div class="job-title"> Deplomancy Toutor</div>
+                <div class="job-description">We are seeking a highly skilled teacher to join our team. The ideal
+                    candidate will have experience teaching deplomancy to students of all skill levels and will be
+                    able to create engaging and interactive lesson plans.</div>
+                <div class="job-salary">&#8358 150,000</div>
+                <div class="bg-slate-200 p-2 rounded-xl w-fit italic hover:bg-slate-400 hover:text-white"><a href="#">View Offer</a></div>
+                <div class="availabilityred">Unavailable</div>
+            </div>
+            <div class="card">
+
+                <div class="job-title"> Secatary</div>
+                <div class="job-description">We are seeking a highly skilled secatary to join our team. </div>
+                <div class="job-salary">&#8358 80,000</div>
+                <div class="bg-slate-200 p-2 rounded-xl w-fit italic hover:bg-slate-400 hover:text-white"><a href="#">View Offer</a></div>
+                <div class="availabilityred">Unavailable</div>
+            </div>
+            <div class="card">
+
+                <div class="job-title"> Accountant</div>
+                <div class="job-description">We are seeking a highly sckilled accountants.</div>
+                <div class="job-salary">&#8358 100,000</div>
+                <div class="bg-slate-200 p-2 rounded-xl w-fit italic hover:bg-slate-400 hover:text-white"><a
+                        href="https://www.reddit.com/r/advertising/comments/192mby2/portfolio_for_account_manager/">View Offer</a></div>
+                <div class="availabilitygreen">Available</div>
+            </div>
+        </div>
+            
+
+        <div id="Support" class="fixed p-2 bg-black rounded-full bottom-5 right-5 " onclick="support()">
+            <img class="w-10" src="/Project/images/icons8-support-100 (2).png" alt="">
+        </div>
+
+        <div id="Support-main"
+            class="fixed hidden flex-col p-10 bg-blue-200 bg-opacity-80 rounded-3xl bottom-[15%] left-[5%] w-[90%] rounded-br-none">
+            <div class="absolute p-3 border-black rounded-full top-5 right-5 w-fit h-fit">
+                <img id="support-close" onclick="supportno()" class="w-8 " src="/Project/images/icons8-close.svg"
+                    alt="">
+            </div>
+            <div class="flex flex-col gap-5 py-5">
+                <h1 class="text-xl font-bold">Hello...</h1>
+                <p class="italic ">If you're confused or there are questions you'd like to ask or even there's something
+                    wrong that we might have overlooked unintentionally, please follow the below link, get answers to
+                    freaquesntly asked questions and report bugs and errors. Thank you</p>
+
+                <div id="follow" class="self-center p-3 bg-blue-700 rounded-lg w-fit hover:text-white" onclick="follow()">"Help Us Help
+                    you"</div>
+
+            </div>
+        </div>
+
+        <footer id="footer" class="flex items-center justify-center w-full bg-blue-100 text-slate-900 py-7">
+            <div id="Foot" class="flex">
+                <div>
+                    <img onclick="logo()" src="/Project/images/logo.jpg" alt="" class="absolute w-10 rounded-full left-3">
+                </div>
+        
+                <div id="foot" class="flex flex-col gap-7">
+        
+                    <div id="foot-1" class="flex flex-col gap-5 text-center list-none">
+        
+        
+                        <div id="foot-1-2">
+                            <p class="text-lg font-semibold text-black">Resources</p>
+                            <li><a href="/Project/footer/support.html">Support</a></li>
+                        </div>
+        
+                        <div id="foot-1-3">
+                            <p class="text-lg font-semibold text-black">Company</p>
+                            <li><a href="/Project/footer/job oppurtunities.html">Job Openings</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </div>
+        
+                        <div id="foot-1-3">
+                            <p class="text-lg font-semibold text-black">Pricing</p>
+                            <li><a href="/Project/Enrol/Enrol.html">View Offers</a></li>
+                        </div>
+        
+        
+        
+        
+                    </div>
+        
+                    <div id="foot-2" class="flex justify-center gap-3">
+        
+                        <div >
+                            <img src="/Project/images/icon-facebook.svg" alt="" onclick="facebook()" >
+                        </div>
+                        <div>
+                            <img src="/Project/images/icon-twitter.svg" alt="" onclick="twitter()">
+                        </div>
+                        <div>
+                            <img src="/Project/images/icon-instagram.svg" alt="" onclick="insta()">
+                        </div>
+                    </div>
+    
+                    <p>&copy; Zion-Study-Center. All rights reserved.</p>
+        
+                </div>
+    
+            </div>
+        </footer>
+
+        <script src="/Project/index.js/index.js"></script>
+</body>
+
+</html>

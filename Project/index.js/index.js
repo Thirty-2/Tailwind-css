@@ -159,3 +159,7 @@
             function supportno(){
                 document.getElementById('Support-main').style.display ="none"
             }
+
+            function follow(){
+                location.href = "/Project/footer/support.html"
+            }
